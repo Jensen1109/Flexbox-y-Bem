@@ -1,0 +1,41 @@
+.Galeria{
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+    padding: 10px;
+    margin: 10px;
+    margin: 0 auto;
+    max-width:1400px;
+    margin-top: 40px;
+
+}
+
+.Galeria__personajes{
+    background-color: rgb(235, 234, 234);
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    border:1px solid black;
+}
+
+.Galeria__imagen{
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom:-10px;
+}
+
+.Galeria__Descripcion{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Galeria__personajes:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: azure;
+    transition: 0.2s;
+}

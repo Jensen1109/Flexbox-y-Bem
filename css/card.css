@@ -1,0 +1,49 @@
+.card{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+    background: rgb(255, 255, 255);
+    width: 300px;
+    border: 1px solid #eee;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra notoria */
+   
+    
+}
+
+.card__imagen{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+
+.card__titulo{
+    font-size: 20px;
+}
+
+.card__descripcion{
+    margin: 1px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    padding: 5px;
+     text-align: justify;
+}
+
+.card__boton{
+    margin: 5px;
+    background-color: green;
+    padding: 10px;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+}
+.card__boton:hover{
+    background-color: chartreuse;
+    transition: 1.2s;
+}
