@@ -3,3 +3,27 @@
     box-sizing: border-box;
     border: 0;
 }
+
+.header{
+        background-color: rgb(47, 0, 255);
+        padding: 10px;
+        color: white;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header__nav-link{
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__nav-link:hover{
+    background-color: red;
+    transition: 1.3s;
+}
