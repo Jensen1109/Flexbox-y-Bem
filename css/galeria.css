@@ -1,41 +1,45 @@
-.Galeria{
-    display: flex;
-    gap: 10px;
-    flex-wrap:wrap;
-    padding: 10px;
-    margin: 10px;
-    margin: 0 auto;
-    max-width:1400px;
-    margin-top: 40px;
 
+.Galeria{
+    display: flex; /* Usa Flexbox para alinear elementos en fila por defecto. */
+    gap: 10px; /* Espacio de 10px entre los elementos hijos. */
+    flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea si no caben en una fila. */
+    padding: 10px; /* Espacio interno de 10px en todos los lados del contenedor. */
+    margin: 10px; /* Espaciado externo inicial de 10px (sobrescrito más abajo por margin: 0 auto). */
+    margin: 0 auto; /* Centra horizontalmente el contenedor dentro de su elemento padre. */
+    max-width: 1400px; /* Ancho máximo de la galería, útil para pantallas grandes. */
+    margin-top: 40px; /* Espaciado superior de 40px respecto al elemento anterior. */
 }
+
 
 .Galeria__personajes{
-    background-color: rgb(235, 234, 234);
-    height: 400px;
-    width: 300px;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    border:1px solid black;
+    background-color: rgb(235, 234, 234); /* Fondo gris claro. */
+    height: 400px; /* Altura fija de la tarjeta. */
+    width: 300px; /* Ancho fijo de la tarjeta. */
+    align-items: center; /* Alinea elementos hijos en el centro vertical (no funciona sin display flex). */
+    text-align: center; /* Centra el texto horizontalmente dentro de la tarjeta. */
+    border-radius: 5px; /* Bordes ligeramente redondeados. */
+    padding: 10px; /* Espacio interno alrededor del contenido. */
+    border: 1px solid black; /* Borde negro de 1px. */
 }
+
 
 .Galeria__imagen{
-    width: auto;
-    height: 300px;
-    border-radius: 5px;
-    margin-bottom:-10px;
+    width: auto; /* El ancho se ajusta automáticamente a la imagen original. */
+    height: 300px; /* Altura fija para uniformar las imágenes. */
+    border-radius: 5px; /* Bordes ligeramente redondeados. */
+    margin-bottom: -10px; /* Margen negativo para acercar el contenido siguiente a la imagen. */
 }
+
 
 .Galeria__Descripcion{
-    text-align: center;
-    font-weight: bold;
+    text-align: center; /* Centra el texto horizontalmente. */
+    font-weight: bold; /* Texto en negrita para resaltar la descripción. */
 }
 
+
 .Galeria__personajes:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    background-color: azure;
-    transition: 0.2s;
+    transform: scale(1.2); /* Escala la tarjeta al 120% de su tamaño. */
+    cursor: pointer; /* Muestra un puntero de mano para indicar que es interactiva. */
+    background-color: azure; /* Cambia el fondo a un azul muy claro al pasar el ratón. */
+    transition: 0.2s; /* Hace que la transformación y cambio de color sean suaves (0.2 segundos). */
 }

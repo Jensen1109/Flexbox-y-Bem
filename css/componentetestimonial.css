@@ -1,30 +1,37 @@
+
 .contenedor-componente{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border: 2px solid #eee;
-    box-shadow:0 0 7px;
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #d8d5d5;
-    border-radius: 5px;
-    padding: 10px;
-}
-.contenedor-componente__imgavatar{
-    width: 150px;
-    height: auto;
-    border-radius: 55%;
-    object-fit: cover;
-}
-.contenedor-componente__imgavatar:hover{
-    transform: scale(1.2);
+    display: flex; /* Activa el modelo Flexbox para organizar los elementos hijos en fila por defecto. */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor. */
+    gap: 16px; /* Espaciado de 16px entre los elementos hijos (reemplaza necesidad de margin individual). */
+    border: 2px solid #eee; /* Borde gris claro de 2px alrededor del contenedor. */
+    box-shadow: 0 0 7px; /* Sombra difusa alrededor del contenedor: desplazamiento X=0, Y=0, difuminado=7px, color por defecto negro. */
+    width: 600px; /* Ancho fijo de 600px para el contenedor. */
+    margin: 0 auto; /* Centra el contenedor horizontalmente dentro de su padre. */
+    margin-top: 20px; /* Espaciado de 20px desde la parte superior del elemento anterior. */
+    background-color: #d8d5d5; /* Color de fondo gris claro. */
+    border-radius: 5px; /* Bordes ligeramente redondeados (5px). */
+    padding: 10px; /* Espacio interno entre el contenido y el borde. */
 }
 
+
+.contenedor-componente__imgavatar{
+    width: 150px; /* Ancho fijo de la imagen. */
+    height: auto; /* Ajusta la altura proporcionalmente para mantener la relación de aspecto. */
+    border-radius: 55%; /* Bordes redondeados: 55% produce un efecto circular (si el ancho y alto son iguales). */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área, recortando si es necesario. */
+}
+
+
+.contenedor-componente__imgavatar:hover{
+    transform: scale(1.2); /* Escala la imagen a 120% de su tamaño al pasar el ratón. */
+    /* Nota: para que este efecto sea suave, añadir transition en el estado base de la imagen. Ej: transition: transform 0.3s ease; */
+}
+
+
 .contenedor-componente__context{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Define la tipografía para todo el bloque de texto. */
 }
 
 .contenedor-componente__context__texto{
-    font-size: 16px;
+    font-size: 16px; /* Tamaño de fuente del texto principal. */
 }

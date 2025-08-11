@@ -1,36 +1,41 @@
+
 .seccion-encabezado{
-    padding: 40px 20px;
-    background-color:#f9f9f9;
-    border-radius: 10px;
+    padding: 40px 20px; /* Espacio interno: 40px arriba/abajo, 20px izquierda/derecha. */
+    background-color: #f9f9f9; /* Color de fondo gris muy claro. */
+    border-radius: 10px; /* Bordes redondeados (10px) en toda la caja. */
 }
+
 
 .seccion-encabezado__contenedor{
-    display: flex;
-    max-width: 960px;
-    margin: 0 auto;
-    align-items: flex-start;
+    display: flex; /* Usa Flexbox para alinear los elementos hijos en fila. */
+    max-width: 960px; /* El ancho máximo será 960px; evita que crezca más en pantallas grandes. */
+    margin: 0 auto; /* Centra horizontalmente el contenedor dentro de su padre. */
+    align-items: flex-start; /* Alinea los elementos hijos en la parte superior del eje vertical. */
 }
+
 
 .seccion-encabezado__icono{
-    width:800px;
-    height: auto;
-    align-items: flex-start;
+    width: 800px; /* Ancho fijo de 800px (puede ser grande para pantallas pequeñas, cuidado con responsividad). */
+    height: auto; /* Ajusta la altura proporcionalmente al ancho para mantener la relación de aspecto. */
+    align-items: flex-start; /* Intenta alinear contenido en la parte superior, aunque 'align-items' no tiene efecto aquí a menos que sea un contenedor flex. */
 }
+
 
 .seccion-encabezado__imagen{
-    width:100%; 
-    height:auto;
-    margin-left: -30px;
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor padre. */
+    height: auto; /* Mantiene la proporción de la imagen. */
+    margin-left: -30px; /* Mueve la imagen 30px hacia la izquierda (puede generar solapamiento con otros elementos). */
 }
+
 
 .seccion-encabezado__titulo{
-    font-size: 20px;
-    
-    color: #333;
+    font-size: 20px; /* Tamaño de fuente de 20px. */
+    color: #333; /* Color gris oscuro para el texto (buena legibilidad). */
 }
 
+
 .seccion-encabezado__texto{
-    text-align:justify;
-    color: #666;
-    line-height: 1.6;
+    text-align: justify; /* Justifica el texto alineando ambos márgenes. */
+    color: #666; /* Color gris medio para el texto. */
+    line-height: 1.6; /* Altura de línea mayor para mejorar la legibilidad. */
 }

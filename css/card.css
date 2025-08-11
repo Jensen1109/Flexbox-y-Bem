@@ -1,51 +1,62 @@
 .card{
-    margin: 0 auto;
-    display: flex;
-    margin-top: 80px;
-    background: rgb(255, 255, 255);
-    width: 300px;
-    border: 1px solid #eee;
-    flex-direction: column;
-    border-radius: 5px;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra notoria */
+    margin: 0 auto; /* Centra horizontalmente la tarjeta: left/right = auto. También pone top/bottom = 0 (que luego se sobrescribe). */
+    display: flex; /* Activa Flexbox para controlar la disposición de los elementos hijos. */
+    margin-top: 80px; /* Añade 80px de separación arriba. Nota: sobrescribe el margin-top anterior (que era 0). Resultado final: margin-top:80px; margin-bottom:0; margin-left/right:auto. */
+    background: rgb(255, 255, 255); /* Color de fondo blanco usando formato RGB. Equivalente a #ffffff. */
+    width: 300px; /* Ancho fijo de la tarjeta. Considera usar max-width para responsividad si la necesitas. */
+    border: 1px solid #eee; /* Borde de 1px, sólido y color gris muy claro (#eee). */
+    flex-direction: column; /* Alinea elementos hijos en columna (verticalmente). */
+    border-radius: 5px; /* Redondeo de esquinas (5px). */
+    text-align: center; /* Centra el texto en elementos en línea dentro de la tarjeta. */
+    align-items: center; /* Centra horizontalmente los items dentro del eje transversal del flex (útil con flex-direction: column). */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra: desplazamiento Y=5px, blur=15px, color negro con 30% de opacidad — crea profundidad. */
     
 }
 
+
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.1); /* Escala la tarjeta al 110% cuando se hace hover. Nota: no hay transition definido en .card, por lo que el cambio será instantáneo; añadir transition lo suaviza. */
 }
+
+
 .card__imagen{
-    width:100%;
-    height:auto;
-    object-fit: cover;
+    width:100%; /* Hace que la imagen ocupe todo el ancho del contenedor padre (300px en este caso). */
+    height:auto; /* Mantiene la relación de aspecto original de la imagen (no fuerza una altura). */
+    object-fit: cover; /* Si la caja de la imagen tuviera un tamaño fijo, esto recortaría la imagen para cubrir completamente el contenedor. Con height:auto puede no recortar; para recortar de forma consistente fija una altura. */
 }
+
 
 
 .card__titulo{
-    font-size: 20px;
+    font-size: 20px; /* Tamaño de fuente para el título (20px). */
+    /* Nota: no hay margin/padding definido aquí; el comportamiento por defecto del elemento (por ejemplo <h2>) puede incluir márgenes. */
 }
+
 
 .card__descripcion{
-    margin: 1px;
-    font-size: 14px;
-    color: #555;
-    line-height: 1.4;
-    padding: 5px;
-    text-align: justify;
+    margin: 1px; /* Margen muy pequeño alrededor del bloque (1px). Es poco habitual — quizá querías 1rem o 8px. */
+    font-size: 14px; /* Tamaño de fuente para la descripción. */
+    color: #555; /* Color de texto gris oscuro para buena legibilidad sin ser negro puro. */
+    line-height: 1.4; /* Altura de línea para mejorar la lectura: 1.4 veces el tamaño de fuente. */
+    padding: 5px; /* Relleno interno de 5px, separa el texto de los bordes. */
+    text-align: justify; /* Justifica el texto, alineando ambos bordes izquierdo y derecho (puede crear espacios irregulares en líneas cortas). */
 }
 
+
 .card__boton{
-    margin: 5px;
-    background-color: green;
-    padding: 10px;
-    cursor: pointer;
-    width: 90%;
-    border-radius: 10px;
-    border: none;
+    margin: 5px; /* Separación externa pequeña alrededor del botón. */
+    background-color: green; /* Color de fondo del botón. 'green' es un nombre de color CSS; considerar usar hex/var para consistencia. */
+    padding: 10px; /* Relleno interno para ampliar la zona click-able. */
+    cursor: pointer; /* Cambia el cursor a mano para indicar interactividad. */
+    width: 90%; /* El botón ocupa el 90% del ancho del contenedor padre (tarjeta). */
+    border-radius: 10px; /* Bordes redondeados del botón. */
+    border: none; /* Elimina el borde por defecto del botón. */
+    /* SUGERENCIA: colocar aquí `transition: background-color 0.3s, transform 0.15s;` para suavizar cambios al hacer hover.
+       Evita declarar transition sólo en :hover (mejor hacerlo en el estado base). */
 }
+
+
 .card__boton:hover{
-    background-color: chartreuse;
-    transition: 1.2s;
+    background-color: chartreuse; /* Cambia el color de fondo al pasar el ratón. Ojo: 'chartreuse' es un verde muy brillante. */
+    transition: 1.2s; /* Define la transición, pero está en :hover — es preferible colocar el `transition` en .card__boton (estado base) para que el efecto funcione de forma consistente al entrar y salir del hover. */
 }

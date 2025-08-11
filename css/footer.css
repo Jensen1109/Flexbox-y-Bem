@@ -1,41 +1,48 @@
+
 .footer{
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-    background-color: blue;
-    color: white;
-    width:100%;
-    height: 170px;
-    margin-top: 20px;
+    display: flex; /* Usa Flexbox para organizar las columnas horizontalmente. */
+    justify-content: space-around; /* Distribuye las columnas con espacios iguales entre ellas. */
+    align-items: flex-start; /* Alinea los elementos al inicio del eje vertical (parte superior). */
+    background-color: blue; /* Fondo azul para todo el footer. */
+    color: white; /* Texto blanco por defecto para el contenido dentro del footer. */
+    width: 100%; /* Ocupa todo el ancho disponible de la página. */
+    height: 170px; /* Altura fija de 170px (puede limitar contenido si hay mucho texto). */
+    margin-top: 20px; /* Espaciado de 20px respecto al elemento anterior. */
 }
+
 
 .footer__columna{
-    margin-bottom: 20px;
-    /* text-align: center; */
-    font-size: 1.2rem;
+    margin-bottom: 20px; /* Espacio extra debajo de la columna. */
+    /* text-align: center; */ /* Comentado: alinearía el texto al centro de la columna. */
+    font-size: 1.2rem; /* Tamaño de fuente ligeramente más grande (1.2 veces el tamaño base). */
 }
 
+
 .footer__columna__titulo{
-    margin-bottom: 12px;
-    font-size: 21px;
-    color:rgb(255, 255, 255);
+    margin-bottom: 12px; /* Espaciado debajo del título. */
+    font-size: 21px; /* Tamaño de fuente del título. */
+    color: rgb(255, 255, 255); /* Color blanco para el texto del título. */
 }
 
 .footer__columna__listaul{
-    list-style: none;
-    cursor: pointer;
-    color: white;
+    list-style: none; /* Elimina viñetas/puntos de la lista. */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima. */
+    color: white; /* Texto blanco para los elementos de la lista. */
 }
+
 
 .footer__columna__listaul__item{
-    margin-bottom: 12px;
+    margin-bottom: 12px; /* Espaciado inferior entre ítems de la lista. */
 }
 
+
 .footer__columna__listaul__item__link{
-    text-decoration: none;
-    color: #ccc;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Elimina subrayado de los enlaces. */
+    color: #ccc; /* Color gris claro para los enlaces. */
+    transition: color 0.3s ease; /* Transición suave del color al hacer hover. */
 }
+
+
 .footer__columna__listaul__item__link:hover{
-    color: #fff;
+    color: #fff; /* Cambia a blanco puro al pasar el ratón. */
 }

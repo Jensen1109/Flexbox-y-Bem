@@ -1,58 +1,71 @@
+
 .lista-tarea{
-    width: 400px;
-    border: none;
-    border-radius: 8px;
-    background-color: #b9b9b9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 400px; /* Ancho fijo del contenedor */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #b9b9b9; /* Fondo gris claro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto de elevación */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 10px; /* Espacio superior */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Los elementos se apilan en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
 }
+
 
 .lista-tarea__item{
-    padding:12px 15px;
-    border-bottom: 1px solid #eee;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding:12px 15px; /* Espaciado interno */
+    border-bottom: 1px solid #eee; /* Línea divisoria entre tareas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex; /* Flexbox para distribuir elementos */
+    justify-content: space-between; /* Espacia elementos a los extremos */
+    align-items: center; /* Centra verticalmente */
 }
 
+
 .lista-tarea__checkbox{
-    width:20px;
-    height:30px;
+    width:20px; /* Ancho del checkbox */
+    height:30px; /* Alto del checkbox */
 }
+
+
 .lista-tarea__texto{
-    padding: 0 10px;
-    text-align: left;
+    padding: 0 10px; /* Espaciado lateral */
+    text-align: left; /* Alineación a la izquierda */
 }
+
+
 .lista-tarea__borrar{
-    background-color: #e74c3c;
-    color: white;
-    cursor: pointer;
-    padding: 2px 5px;
-    border-radius:4px;
-    text-align: center;
+    background-color: #e74c3c; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor a mano al pasar encima */
+    padding: 2px 5px; /* Espaciado interno */
+    border-radius:4px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro */
 }
+
+
 .lista-tarea__button{
-    background-color: green;
-    color: white;
-    font-size: 15px;
-    border: none;
-    border-radius: 6px;
-    width: 200px;
-    padding: 10px;
-    margin-top: 15px;
-    cursor: pointer;
+    background-color: green; /* Fondo verde */
+    color: white; /* Texto blanco */
+    font-size: 15px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    width: 200px; /* Ancho del botón */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 15px; /* Espacio superior */
+    cursor: pointer; /* Cursor tipo mano al pasar encima */
 }
+
+
 .lista-tarea__button:hover{
-    transition: 0.2s;
-    background-color: aqua;
+    transition: 0.2s; /* Transición suave */
+    background-color: aqua; /* Fondo cambia a color aqua */
 }
+
+
 .lista-tarea__item:has(input[type="checkbox"]:checked){
-    text-decoration: line-through;
-    color: #999;
+    text-decoration: line-through; /* Tacha el texto */
+    color: #999; /* Cambia el color a gris */
 }
