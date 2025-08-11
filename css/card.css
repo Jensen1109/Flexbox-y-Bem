@@ -13,6 +13,9 @@
     
 }
 
+.card:hover{
+    transform: scale(1.1);
+}
 .card__imagen{
     width:100%;
     height:auto;
@@ -30,7 +33,7 @@
     color: #555;
     line-height: 1.4;
     padding: 5px;
-     text-align: justify;
+    text-align: justify;
 }
 
 .card__boton{
